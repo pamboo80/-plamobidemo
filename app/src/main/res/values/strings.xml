@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">plaMobi</string>
+
+    <!-- Menu -->
+    <string name="my_profile">My profile</string>
+    <string name="notifications">Notifications</string>
+    <string name="chat">Chat</string>
+    <string name="filters">Filters</string>
+    <string name="settings">Settings</string>
+
+    <!-- BottomMenu titles -->
+    <string name="map_view">Map View</string>
+    <string name="list_view">List View</string>
+    <!-- notifications is already exists -->
+    <string name="chat_summary">Chat Summary</string>
+
+    <!-- LoginFragment -->
+    <string name="login_facebook">Log in with Facebook</string>
+    <string name="login_google_plus">Log in with Google+</string>
+    <string name="or">or</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="lost_password">Lost your password?</string>
+    <string name="dont_have_acc">Don\'t have an account?\t</string>
+    <string name="sign_up_here">Sign up here</string>
+    <string name="login">Login</string>
+
+    <!-- SettingsFragment -->
+    <string name="enable_geo_notification">Enable Geo-boundary notification</string>
+    <string name="alert_me_etc">Alert me when my search filters matches in the Geo location where I\'m within:</string>
+    <string name="two_miles">2 miles</string>
+    <string name="five_miles">5 miles</string>
+    <string name="ten_miles">10 miles</string>
+    <string name="fifty_miles">50 miles</string>
+    <string name="dont_allow_users_to_contact_through">Don\'t allow users to contact me through:</string>
+    <string name="my_contact_number">My Phone Number</string>
+    <string name="my_email">My Email</string>
+    <string name="block_users_list">Block users list</string>
+
+    <!-- ProfileFragment -->
+    <string name="phone_number">Phone number</string>
+    <string name="email">Email</string>
+
+    <!-- Notification Item -->
+    <string name="remove">Remove</string>
+    <string name="block_user">Block</string>
+
+    <!-- Search Settings (MapFragment) -->
+    <string name="search">Search</string>
+    <string name="search_settings">Search settings</string>
+    <string name="remove_or_add">(Remove/Add)</string>
+    <string name="show">Show</string>
+    <string name="service_seller_post_only">Service Seller Post Only</string>
+    <string name="service_seeker_post_only">Service Seeker Post Only</string>
+    <string name="all_status">All Status</string>
+    <string name="no_points_for_filters">There are no points for this filters</string>
+
+    <!-- PopupMessage (MapFragment) -->
+    <string name="call">Call</string>
+    <string name="n_miles_away">%.1f miles away</string>
+    <string name="posted_on_n_days_ago">Posted on: %d days ago</string>
+
+    <!-- Filters Fragment -->
+    <string name="add_filters">Add Filters</string>
+    <string name="current_filters">Current Filters</string>
+
+    <!-- MyPostFragment -->
+    <string name="my_post">My Post</string>
+    <string name="save">Save</string>
+    <string name="save_as_i_sell">Save as\nI Sell service</string>
+    <string name="save_as_i_seek">Save as\nI Seek service</string>
+    <string name="tag_this_in_the_map_on">Tag this in the Map on:</string>
+    <string name="current_location">current location</string>
+    <string name="wherever_i_move">wherever I move</string>
+    <string name="characters_quantity_template" translatable="false">%d/%d</string>
+    <integer name="post_max_characters">242</integer>
+    <string name="you_must_give_geo_permission">You must give geo permission</string>
+
+    <!-- errors -->
+    <string name="failed_to_connect_google_api">Failed to connect Google API for getting location</string>
+
+    <string name="you">You</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

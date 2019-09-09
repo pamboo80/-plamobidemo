@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#4054B2"/>
+            <padding android:top="8dp"
+                android:bottom="8dp"
+                android:left="8dp"
+                android:right="8dp"/>
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/ic_message_email" />
+    </item>
+</layer-list>

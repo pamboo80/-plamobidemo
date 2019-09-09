@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="in.bangbit.plamobidemo.ProfileFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/flProfileBackground">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/background_account"
+            tools:ignore="ContentDescription" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imProfilePhoto"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/demo_man_face"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imProfilePhoto"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:textSize="24sp"
+                android:textColor="@android:color/white"
+                android:text="@string/demo_username" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/btnProfileEditPhoto"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/flProfileBackground"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-36dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/ic_edit"
+        app:cb_color="#64DB17"
+        app:cb_pressedRingWidth="8dp"/>
+
+    <ImageView
+        android:id="@+id/imProfilePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnProfileEditPhoto"
+        android:layout_margin="16dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_edit"
+        android:background="@drawable/background_round"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@+id/imProfilePhone"
+        android:layout_alignBottom="@+id/imProfilePhone"
+        android:layout_toRightOf="@+id/imProfilePhone"
+        android:layout_toEndOf="@+id/imProfilePhone">
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/demo_phone"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/edPhone"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Phone"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:textAllCaps="true"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imProfileMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imProfilePhone"
+        android:layout_margin="16dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_edit"
+        android:background="@drawable/background_round"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@+id/imProfileMail"
+        android:layout_alignBottom="@+id/imProfileMail"
+        android:layout_toRightOf="@+id/imProfileMail"
+        android:layout_toEndOf="@+id/imProfileMail">
+
+        <EditText
+            android:id="@+id/edMail"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Mail"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/demo_email"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textAllCaps="true"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imListMessagePhoto"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imListMessagePhoto"
+        android:layout_alignBottom="@+id/imListMessagePhoto"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/imListMessagePhoto"
+        android:layout_toEndOf="@+id/imListMessagePhoto"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvListMessageUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvListMessageDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#bdbdbd"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvListMessageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imListMessagePhoto"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvListMessageTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvListMessageText"
+        android:gravity="end"
+        android:textColor="#bdbdbd"/>
+
+    <Button style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/btnListMessageCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvListMessageTime"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/call"/>
+
+    <Button style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/btnListMessageEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvListMessageTime"
+        android:layout_toRightOf="@+id/btnListMessageCall"
+        android:layout_toEndOf="@+id/btnListMessageCall"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/email"/>
+
+    <Button style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/btnListMessageChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvListMessageTime"
+        android:layout_toRightOf="@+id/btnListMessageEmail"
+        android:layout_toEndOf="@+id/btnListMessageEmail"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/chat"/>
+
+</RelativeLayout>

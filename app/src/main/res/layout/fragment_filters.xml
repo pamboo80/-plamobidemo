@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D0D2D3"
+    tools:context="in.bangbit.plamobidemo.FiltersFragment">
+
+    <EditText
+        android:id="@+id/edFilters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@android:color/white"
+        android:inputType="text"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:id="@+id/btnAddFilters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edFilters"
+        android:layout_alignRight="@+id/edFilters"
+        android:layout_alignEnd="@+id/edFilters"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:text="@string/add_filters" />
+
+    <TextView
+        android:id="@+id/label_current_filters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnAddFilters"
+        android:layout_margin="8dp"
+        android:textColor="#686868"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:text="@string/current_filters" />
+<!--
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFilters"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/label_current_filters"
+        android:background="@android:color/white"/>
+-->
+
+    <com.wefika.flowlayout.FlowLayout
+        android:id="@+id/flowLayoutFilters"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/label_current_filters"
+        android:background="@android:color/white" />
+
+</RelativeLayout>

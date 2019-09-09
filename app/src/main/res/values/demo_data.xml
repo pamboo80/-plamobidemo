@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="demo_username">Tom Parrot</string>
+    <string name="demo_email">goodparrot@gmail.com</string>
+    <string name="demo_phone">050 443 68 67</string>
+</resources>

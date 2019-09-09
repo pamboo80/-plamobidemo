@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        tools:context="in.bangbit.plamobidemo.SettingsFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/cbGeoNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/cbGeoNotification"
+                android:layout_toRightOf="@+id/cbGeoNotification"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enable_geo_notification"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alert_me_etc" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2">
+
+                <RadioButton
+                    android:id="@+id/rb2miles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/two_miles"
+                    android:layout_row="0"
+                    android:layout_column="0" />
+
+                <RadioButton
+                    android:id="@+id/rb5miles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/five_miles"
+                    android:layout_row="1"
+                    android:layout_column="0"/>
+
+                <RadioButton
+                    android:id="@+id/rb10miles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ten_miles"
+                    android:layout_row="0"
+                    android:layout_column="1"/>
+
+                <RadioButton
+                    android:id="@+id/rb50miles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fifty_miles"
+                    android:layout_row="1"
+                    android:layout_column="1"/>
+
+        </GridLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@android:color/darker_gray"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/dont_allow_users_to_contact_through"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="2">
+
+            <CheckBox
+                android:id="@+id/cbContactWithNumber"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="@string/my_contact_number"/>
+
+            <CheckBox
+                android:id="@+id/cbContactWithMail"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text="@string/my_email"/>
+
+            <CheckBox
+                android:id="@+id/cbContactWithChat"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:text="@string/chat"/>
+
+        </GridLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@android:color/darker_gray"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/block_users_list"/>
+<!--
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvBlockedUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+-->
+        <com.wefika.flowlayout.FlowLayout
+            android:id="@+id/flowLayoutBlockedUsers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+</LinearLayout>
