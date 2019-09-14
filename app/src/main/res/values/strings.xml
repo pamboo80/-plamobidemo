@@ -9,7 +9,7 @@
     <string name="settings">Settings</string>
 
     <!-- BottomMenu titles -->
-    <string name="map_view">Map View</string>
+    <string name="map_view">plaMobi</string>
     <string name="list_view">List View</string>
     <!-- notifications is already exists -->
     <string name="chat_summary">Chat Summary</string>
