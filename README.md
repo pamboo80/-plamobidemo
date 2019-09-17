@@ -1,6 +1,6 @@
 # plamobidemo
 
-Native Android mobile app project to show case the plaMobi app - UI/UX, App functionality with simulated data from a node.js backend. 
+Native Android mobile app project to show case the plaMobi app - UI/UX, App functionality with simulated data from a Node.js backend. 
 
 # App Screenshots
 <div id="block_container1" style="display:inline">
